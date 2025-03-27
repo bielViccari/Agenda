@@ -7,9 +7,15 @@
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
+            <% if(!user) { %>
               <li class="nav-item">
                 <a class="nav-link" href="/login/index">Entrar</a>
               </li>
+            <% } else { %>
+              <li class="nav-item">
+                <a class="nav-link" href="/login/logout">Sair</a>
+              </li>
+            <% } %>  
           </ul>
         </div>
     </div>
